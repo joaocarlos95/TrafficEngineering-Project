@@ -1,0 +1,45 @@
+Nov 18 12:05:14.785 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Nov 18 12:05:14.785 HYPERVISOR: Started on TCP port = 54995.
+Nov 18 12:05:14.793 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 18 12:05:14.793 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaocarlos95/Google Drive/Universidade/Mestrado/Engenharia de Tráfego/Avaliação/Laboratórios/Laboratório 3/project-files/dynamips 
+Nov 18 12:05:14.793 GENERAL: working_dir=/Users/joaocarlos95/Google Drive/Universidade/Mestrado/Engenharia de Tráfego/Avaliação/Laboratórios/Laboratório 3/project-files/dynamips
+Nov 18 12:05:14.793 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaocarlos95/Google Drive/Universidade/Mestrado/Engenharia de Tráfego/Avaliação/Laboratórios/Laboratório 3/project-files/dynamips/8e149989-2e23-4db4-a062-99a8dca675d7 
+Nov 18 12:05:14.793 GENERAL: working_dir=/Users/joaocarlos95/Google Drive/Universidade/Mestrado/Engenharia de Tráfego/Avaliação/Laboratórios/Laboratório 3/project-files/dynamips/8e149989-2e23-4db4-a062-99a8dca675d7
+Nov 18 12:05:14.793 HYPERVISOR: exec_cmd: vm create PE3 5 c7200 
+Nov 18 12:05:14.794 VM: VM PE3 created.
+Nov 18 12:05:14.794 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE3 5004 
+Nov 18 12:05:14.794 HYPERVISOR: exec_cmd: c7200 get_mac_addr PE3 
+Nov 18 12:05:14.794 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:14.795 HYPERVISOR: exec_cmd: vm slot_add_binding PE3 0 0 C7200-IO-FE 
+Nov 18 12:05:14.795 HYPERVISOR: exec_cmd: vm set_disk0 PE3 0 
+Nov 18 12:05:14.795 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:14.795 HYPERVISOR: exec_cmd: vm set_idle_pc PE3 0x60189214 
+Nov 18 12:05:14.796 HYPERVISOR: exec_cmd: vm set_ios PE3 /Users/joaocarlos95/GNS3/images/IOS/Cisco IOS Image - c7200 Series.image 
+Nov 18 12:05:14.797 HYPERVISOR: exec_cmd: c7200 set_mac_addr PE3 ca05.9a67.0000 
+Nov 18 12:05:14.797 HYPERVISOR: exec_cmd: vm set_nvram PE3 512 
+Nov 18 12:05:14.798 HYPERVISOR: exec_cmd: vm set_ram PE3 512 
+Nov 18 12:05:14.798 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:14.798 HYPERVISOR: exec_cmd: vm slot_remove_binding PE3 0 0 
+Nov 18 12:05:14.798 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:14.799 HYPERVISOR: exec_cmd: vm slot_add_binding PE3 0 0 C7200-IO-2FE 
+Nov 18 12:05:14.799 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:14.799 HYPERVISOR: exec_cmd: vm slot_add_binding PE3 1 0 PA-2FE-TX 
+Nov 18 12:05:15.753 HYPERVISOR: exec_cmd: nio create_udp udp-a9a013d2-9ac8-4be6-b71d-fcdbfb433b12 10010 127.0.0.1 10011 
+Nov 18 12:05:15.786 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE3 0 1 udp-a9a013d2-9ac8-4be6-b71d-fcdbfb433b12 
+Nov 18 12:05:15.787 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:16.054 HYPERVISOR: exec_cmd: nio create_udp udp-7a81ef06-8863-4764-9a23-c5e14569e406 10022 127.0.0.1 10023 
+Nov 18 12:05:16.055 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE3 1 0 udp-7a81ef06-8863-4764-9a23-c5e14569e406 
+Nov 18 12:05:16.055 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:23.500 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:23.501 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding PE3 0 1 
+Nov 18 12:05:23.502 HYPERVISOR: exec_cmd: nio delete udp-a9a013d2-9ac8-4be6-b71d-fcdbfb433b12 
+Nov 18 12:05:23.667 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:23.667 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding PE3 1 0 
+Nov 18 12:05:23.668 HYPERVISOR: exec_cmd: nio delete udp-7a81ef06-8863-4764-9a23-c5e14569e406 
+Nov 18 12:05:23.815 HYPERVISOR: exec_cmd: vm get_status PE3 
+Nov 18 12:05:23.816 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Nov 18 12:05:23.817 HYPERVISOR: exec_cmd: vm delete PE3 
+Nov 18 12:05:23.817 VM: VM PE3 destroyed.
+Nov 18 12:05:23.818 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 18 12:05:23.835 HYPERVISOR: Stopped.
+Nov 18 12:05:23.835 GENERAL: reset done.

@@ -1,0 +1,39 @@
+Nov 18 12:05:14.663 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Nov 18 12:05:14.663 HYPERVISOR: Started on TCP port = 54986.
+Nov 18 12:05:14.672 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 18 12:05:14.673 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaocarlos95/Google Drive/Universidade/Mestrado/Engenharia de Tráfego/Avaliação/Laboratórios/Laboratório 3/project-files/dynamips 
+Nov 18 12:05:14.673 GENERAL: working_dir=/Users/joaocarlos95/Google Drive/Universidade/Mestrado/Engenharia de Tráfego/Avaliação/Laboratórios/Laboratório 3/project-files/dynamips
+Nov 18 12:05:14.673 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/joaocarlos95/Google Drive/Universidade/Mestrado/Engenharia de Tráfego/Avaliação/Laboratórios/Laboratório 3/project-files/dynamips/905eb32a-782f-41d6-b2b9-9512d4d9f8da 
+Nov 18 12:05:14.673 GENERAL: working_dir=/Users/joaocarlos95/Google Drive/Universidade/Mestrado/Engenharia de Tráfego/Avaliação/Laboratórios/Laboratório 3/project-files/dynamips/905eb32a-782f-41d6-b2b9-9512d4d9f8da
+Nov 18 12:05:14.673 HYPERVISOR: exec_cmd: vm create CE1 2 c7200 
+Nov 18 12:05:14.673 VM: VM CE1 created.
+Nov 18 12:05:14.674 HYPERVISOR: exec_cmd: vm set_con_tcp_port CE1 5001 
+Nov 18 12:05:14.674 HYPERVISOR: exec_cmd: c7200 get_mac_addr CE1 
+Nov 18 12:05:14.674 HYPERVISOR: exec_cmd: vm get_status CE1 
+Nov 18 12:05:14.674 HYPERVISOR: exec_cmd: vm slot_add_binding CE1 0 0 C7200-IO-FE 
+Nov 18 12:05:14.675 HYPERVISOR: exec_cmd: vm set_disk0 CE1 0 
+Nov 18 12:05:14.675 HYPERVISOR: exec_cmd: vm get_status CE1 
+Nov 18 12:05:14.675 HYPERVISOR: exec_cmd: vm set_idle_pc CE1 0x60189214 
+Nov 18 12:05:14.676 HYPERVISOR: exec_cmd: vm set_ios CE1 /Users/joaocarlos95/GNS3/images/IOS/Cisco IOS Image - c7200 Series.image 
+Nov 18 12:05:14.676 HYPERVISOR: exec_cmd: c7200 set_mac_addr CE1 ca02.9a64.0000 
+Nov 18 12:05:14.676 HYPERVISOR: exec_cmd: vm set_nvram CE1 512 
+Nov 18 12:05:14.676 HYPERVISOR: exec_cmd: vm set_ram CE1 512 
+Nov 18 12:05:14.677 HYPERVISOR: exec_cmd: vm get_status CE1 
+Nov 18 12:05:14.677 HYPERVISOR: exec_cmd: vm slot_remove_binding CE1 0 0 
+Nov 18 12:05:14.677 HYPERVISOR: exec_cmd: vm get_status CE1 
+Nov 18 12:05:14.677 HYPERVISOR: exec_cmd: vm slot_add_binding CE1 0 0 C7200-IO-2FE 
+Nov 18 12:05:14.677 HYPERVISOR: exec_cmd: vm get_status CE1 
+Nov 18 12:05:14.678 HYPERVISOR: exec_cmd: vm slot_add_binding CE1 1 0 PA-2FE-TX 
+Nov 18 12:05:14.873 HYPERVISOR: exec_cmd: nio create_udp udp-d146cdc7-c24e-4cfa-99dc-09719bcaefdb 10001 127.0.0.1 10002 
+Nov 18 12:05:14.910 HYPERVISOR: exec_cmd: vm slot_add_nio_binding CE1 0 0 udp-d146cdc7-c24e-4cfa-99dc-09719bcaefdb 
+Nov 18 12:05:14.911 HYPERVISOR: exec_cmd: vm get_status CE1 
+Nov 18 12:05:23.213 HYPERVISOR: exec_cmd: vm get_status CE1 
+Nov 18 12:05:23.215 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding CE1 0 0 
+Nov 18 12:05:23.223 HYPERVISOR: exec_cmd: nio delete udp-d146cdc7-c24e-4cfa-99dc-09719bcaefdb 
+Nov 18 12:05:23.449 HYPERVISOR: exec_cmd: vm get_status CE1 
+Nov 18 12:05:23.450 HYPERVISOR: exec_cmd: vm extract_config CE1 
+Nov 18 12:05:23.451 HYPERVISOR: exec_cmd: vm delete CE1 
+Nov 18 12:05:23.451 VM: VM CE1 destroyed.
+Nov 18 12:05:23.452 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 18 12:05:23.731 HYPERVISOR: Stopped.
+Nov 18 12:05:23.732 GENERAL: reset done.
